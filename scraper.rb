@@ -12,6 +12,6 @@ twitter_list = TwitterList::Scraper.new(twitter_tokens: ENV['MORPH_TWITTER_TOKEN
 
 list_array = twitter_list.people('Simon_Tol', 'tweede-kamer') +
               twitter_list.people('Simon_Tol', 'kabinet-rutte-ii') +
-              twitter_list.people('PolitwoopsNL', 'tweede-kamer-overig') +
+              twitter_list.people('PolitwoopsNL', 'tweede-kamer-overig')
 
 ScraperWiki.save_sqlite([:id], list_array.uniq)
